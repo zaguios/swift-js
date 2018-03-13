@@ -91,22 +91,25 @@ export const getMaxClaimAmount = (net, address) => {
  * @return {Promise<string>} The URL of the best performing node.
  */
 export const getRPCEndpoint = net => {
-  const apiEndpoint = getAPIEndpoint(net)
-  return axios.get(apiEndpoint + '/v2/network/nodes')
-    .then((response) => {
-      const goodNodes = response.data.nodes.filter(n => n.status)
-      let bestHeight = 0
-      let nodes = []
-      for (const node of goodNodes) {
-        if (node.block_height > bestHeight) {
-          bestHeight = node.block_height
-          nodes = [node]
-        } else if (node.block_height === bestHeight) {
-          nodes.push(node)
-        }
-      }
-      return nodes[Math.floor(Math.random() * nodes.length)].url
-    })
+  // const apiEndpoint = getAPIEndpoint(net);
+  return new Promise((resolve, reject) => {
+    resolve("http://swift-consensus1.westus2.cloudapp.azure.com:10332");
+  })
+  // return axios.get(apiEndpoint + '/v2/network/nodes')
+  //   .then((response) => {
+  //     const goodNodes = response.data.nodes.filter(n => n.status)
+  //     let bestHeight = 0
+  //     let nodes = []
+  //     for (const node of goodNodes) {
+  //       if (node.block_height > bestHeight) {
+  //         bestHeight = node.block_height
+  //         nodes = [node]
+  //       } else if (node.block_height === bestHeight) {
+  //         nodes.push(node)
+  //       }
+  //     }
+  //     return nodes[Math.floor(Math.random() * nodes.length)].url
+  //   })
 }
 
 /**

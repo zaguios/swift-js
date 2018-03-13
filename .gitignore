@@ -2,6 +2,9 @@ node_modules
 /.npmignore
 /.project
 /.settings/
+.idea/
+lib/browser.js.map
+lib/index.js.map
 
 
 /docs/_build/
