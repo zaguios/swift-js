@@ -50,7 +50,7 @@ const increaseNeonDBWeight = () => {
  */
 export const loadBalance = (func, config) => {
   if (Math.random() > apiSwitch) {
-    return func(config, neoscan)
+    return func(config, neonDB)
       .then(c => {
         increaseNeoscanWeight()
         return c
@@ -67,7 +67,7 @@ export const loadBalance = (func, config) => {
       })
       .catch(() => {
         increaseNeoscanWeight()
-        return func(config, neoscan)
+        return func(config, neonDB)
       })
   }
 }

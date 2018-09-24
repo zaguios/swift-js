@@ -23,8 +23,8 @@ export const CONTRACTS = {
 export const TEST_NXT_ADDRESS = 'AHcLAfnvzzHyuPPULeXrXZ6RK3Hkdvi1qi'
 
 export const DEFAULT_RPC = {
-  MAIN: 'https://seed1.neo.org:10331',
-  TEST: 'https://seed1.neo.org:20331'
+  MAIN: 'http://swift-consensus1.westus2.cloudapp.azure.com:10332',
+  TEST: 'http://swift-consensus1.westus2.cloudapp.azure.com:10332'
 }
 
 export const DEFAULT_REQ = { jsonrpc: '2.0', method: 'getblockcount', params: [], id: 1234 }

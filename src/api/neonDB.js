@@ -16,7 +16,8 @@ export const name = 'neonDB'
 export const getAPIEndpoint = net => {
   switch (net) {
     case 'MainNet':
-      return 'http://api.wallet.cityofzion.io'
+      return 'https://dry-dawn-67726.herokuapp.com'
+      // return 'http://api.wallet.cityofzion.io'
     case 'TestNet':
       return 'http://testnet-api.wallet.cityofzion.io'
     default:
