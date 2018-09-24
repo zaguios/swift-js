@@ -62,7 +62,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CityOfZion/neon-js.git"
+    "url": "git+https://github.com/zaguios/swift-js.git"
   },
   "keywords": [
     "neo",
@@ -73,9 +73,9 @@
   "author": "Ethan Fast <ejhfast@gmail.com> (https://github.com/Ejhfast)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CityOfZion/neon-js/issues"
+    "url": "https://github.com/zaguios/swift-js/issues"
   },
-  "homepage": "https://github.com/CityOfZion/neon-js#readme",
+  "homepage": "https://github.com/zaguios/swift-js#readme",
   "files": [
     "lib/",
     "src/"
